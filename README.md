@@ -20,14 +20,15 @@ A API Pokemon é uma ferramenta simples para obter informações sobre Pokémon.
 ### 2. Instale as Dependências
 - Certifique-se de ter as dependências necessárias instaladas. No diretório do projeto, execute o seguinte comando para instalar as dependências:
 
-
-npm install
+npm init -y
+npm install express
+npm install -D nodemon
 
 ### 3. Inicie o Servidor
 - Inicie o servidor da API Pokemon com o seguinte comando:
 
 
-node --watch src/index.js 
+nodemon ./src/index.js
 
 
 ### 4. Baixe o Insomnia
@@ -39,6 +40,7 @@ node --watch src/index.js
 
 ### Listar Pokémon
 Endpoint: `/pokemon`
+![Captura de Tela (16)](https://github.com/Lxcaxs-pessoa/Pokemon/assets/141878188/aefb5d67-8039-452f-8d47-eddd4f1c2ced)
 
 - *GET* `http://localhost:3000/pokemon?page=<número_da_página>`
 - Recupere uma lista de Pokémon. Você pode especificar o número da página para navegar pela lista.
@@ -46,6 +48,7 @@ Endpoint: `/pokemon`
 ### Pesquisar por um Pokémon
 
 Endpoint: `/pokemon/:<Id_ou_nome>`
+![Captura de Tela (17)](https://github.com/Lxcaxs-pessoa/Pokemon/assets/141878188/9064131c-c764-431c-b5b6-bbc9c766b626)
 
 - *GET* `http://localhost:3000/pokemon/<Id_ou_nome>`
 - Recupere detalhes sobre um Pokémon específico fornecendo seu ID ou nome.
